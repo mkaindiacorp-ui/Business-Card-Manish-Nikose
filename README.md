@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MKA Digital Card</title>
 
-<!-- Google Font -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -22,21 +21,17 @@ body {
     padding: 15px;
 }
 
-/* CARD */
 .card {
     width: 100%;
     max-width: 400px;
     border-radius: 20px;
     overflow: hidden;
-    animation: fadeIn 1s ease;
 }
 
-/* HEADER */
 .header {
     background: #000;
     padding: 20px;
     border-radius: 20px;
-    position: relative;
     color: white;
 }
 
@@ -69,7 +64,6 @@ body {
     opacity: 0.8;
 }
 
-/* BUTTON */
 .save-btn {
     margin-top: 15px;
     background: #777;
@@ -78,18 +72,10 @@ body {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .save-btn:hover {
     background:#46c34c;
-}
-
-
-
-/* LIST ITEMS */
-.list {
-    margin-top: 20px;
 }
 
 .item {
@@ -97,64 +83,35 @@ body {
     color: white;
     padding: 15px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-	
-
-    /* animation */
-    transform: translateY(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-	 
+    transition: 0.3s;
 }
 
 .item:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(212,175,55,0.35);
 }
 
-.item:active {
-    transform: translateY(-3px) scale(0.97);
-}
-
-.item.call-highlight {
+.call-highlight {
     border: 1px solid gold;
-    box-shadow: 0 0 10px rgba(212,175,55,0.25);
-}
-
-
-/* MAP */
-.map {
-    margin-top: 10px;
 }
 
 .map iframe {
     width: 100%;
     height: 200px;
     border-radius: 10px;
+    margin-top: 10px;
 }
-/*footer*/
+
 .footer {
-margin-bottom:10px;
-background:#000;
+    background:#000;
     display: flex;
     justify-content: center;
     padding: 15px;
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-
-@keyframes slideUp {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 </style>
 </head>
@@ -163,34 +120,27 @@ background:#000;
 
 <div class="card">
 
-    <!-- HEADER -->
-    <div class="header">
-        <div class="logo"><img src="Gold geometric symbol on black.png" width = "360" height= " 100"></div>
+<div class="header">
+    <div class="logo"><img src="Gold .png" width="360" height="100"></div>
 
-        <div class="profile">
-            <img src="manish.jpeg" alt="profile">
-
-            <div class="info">
-                <h2>Mr. Manish Nikose</h2>
-                <p></p>
-                <p>Madhu Kusum And Associates</p>
-            </div>
+    <div class="profile">
+        <img src="manish.jpeg" alt="profile">
+        <div class="info">
+            <h2>Mr. Manish Nikose</h2>
+			<p>Brand & Marketing Executive</p>
+            <p>Madhu Kusum And Associates</p>
         </div>
-
-        <div class="save-btn" onclick="saveContact()">Save Contact</div>
     </div>
 
+    <div class="save-btn" onclick="saveContact()">Save Contact</div>
+</div>
 
-	
-	<br>
-	<div class="item call-highlight" onclick="callNow()">
-    <span>
-        <i class="fa-solid fa-phone-volume" style="color:gold;"></i>
-        Call 
-    </span>
+<div class="item call-highlight" onclick="callNow()">
+    <span><i class="fa-solid fa-phone-volume" style="color:gold;"></i> Call</span>
     <i class="fa-solid fa-angle-right" style="color:gold;"></i>
 </div>
-    <div class="item call-highlight" onclick="whatsapp()">
+
+<div class="item call-highlight" onclick="whatsapp()">
     <span><i class="fa-brands fa-whatsapp" style="color:gold;"></i> WhatsApp</span>
     <i class="fa-solid fa-angle-right" style="color:gold;"></i>
 </div>
@@ -202,7 +152,7 @@ background:#000;
 
 <div class="item call-highlight" onclick="linkedin()">
     <span><i class="fa-brands fa-linkedin" style="color:gold;"></i> LinkedIn</span>
-   <i class="fa-solid fa-angle-right" style="color:gold;"></i>
+    <i class="fa-solid fa-angle-right" style="color:gold;"></i>
 </div>
 
 <div class="item call-highlight" onclick="email()">
@@ -216,64 +166,62 @@ background:#000;
 </div>
 
 <div class="item call-highlight" onclick="map()">
-    <span><i class="fa-solid fa-map" style="color:gold;"></i> LOCATION</span>
+    <span><i class="fa-solid fa-map" style="color:gold;"></i> Location</span>
     <i class="fa-solid fa-angle-right" style="color:gold;"></i>
 </div>
-    <!-- MAP -->
-    <div class="map">
-        <iframe 
-        src="https://maps.app.goo.gl/McoYnwQCbdccywVY6">
-        </iframe>
-    </div>
-	
-	<!--footer-->
-	<div class="footer">
-		<img src="Untitled design.jpg" width="80" height="80" >
-	</div>
 
+<div class="map">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12268.959012656296!2d79.14356385!3d21.1368559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1776776041739!5m2!1sen!2sin";>
+        </iframe>
+</div>
+
+<div class="footer">
+    <img src="Untitled design.jpg" width="80" height="80">
+</div>
+
+</div>
 
 <script>
 
-
 // ACTIONS
 function callNow() {
-    window.location.href = "tel:+918007725090";
+    window.location.href = "tel:+918007795091";
 }
 
 function whatsapp() {
-    window.location.href = "https://wa.me/918007725090";
+    window.open("https://wa.me/918007795091", "_blank");
 }
 
 function instagram() {
-    window.location.href = "https://instagram.com/mka.india.corp";
+    window.open("https://instagram.com/mka.india.corp", "_blank");
 }
 
 function linkedin() {
-    window.location.href = "#";
+    window.open("https://linkedin.com", "_blank");
 }
 
 function email() {
-    window.location.href = "mailto:info.madhukusumassociates.com";
+    window.location.href = "mailto:info@madhukusumassociates.com";
 }
 
 function website() {
-    window.location.href = "https://www.madhukusumassociates.com";
+    window.open("https://www.madhukusumassociates.com", "_blank");
 }
 
 function map() {
-window.location.href = "https://maps.app.goo.gl/McoYnwQCbdccywVY6";
+    window.open("https://maps.app.goo.gl/JmyySgbAHcTFEjwv8", "_blank");
+}
 
 // VCARD DOWNLOAD
 function saveContact() {
-    const vcard = `
-BEGIN:VCARD
+    const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Nilesh Narendra Sakarkar
+FN:Manish Nikose
 ORG:Madhu Kusum Associates
-TEL:+918007725090
-EMAIL:info.madhukusumassociates.com
-END:VCARD
-`;
+TEL:+918007795091
+EMAIL:info@madhukusumassociates.com
+END:VCARD`;
 
     const blob = new Blob([vcard], { type: "text/vcard" });
     const url = URL.createObjectURL(blob);
